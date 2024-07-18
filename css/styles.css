@@ -12,11 +12,16 @@
 
   --bg-color: rgb(245, 245, 245);
   --bg-alpha-color: rgba(245, 245, 245, 0.75);
+
+  --bg-body:linear-gradient(135deg, rgba(20, 133, 225, 0.91), rgba(7, 31, 51, 0.97) 79%);
+  --bg-fondo: rgba(79, 79, 80, 0.799);
 }
 
 /* ********* Reset Styles ********** */
 body {
-    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-body);
+
 }
 a {
   color: var(--link-color);
@@ -65,10 +70,6 @@ a:hover {
 .nav-link:hover{
     color:  var(--bs-white);
 }
-.bg-gradient-blue {
-  background: linear-gradient(135deg, rgba(47, 145, 224, 0.91), rgba(7, 31, 51, 0.97) 79%);
-}
-
 
 
 
@@ -88,9 +89,12 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:  rgba(58, 57, 57, 0.5); /* Color negro con 50% de opacidad */
+  background-color:  var(--bg-fondo); /* Color negro con 50% de opacidad */
   z-index: -1; /* Coloca la superposición detrás del contenido */
 }
+
+
+
 
 .hero-title, .hero-subtitle, .hero-description {
   position: relative;
@@ -98,7 +102,7 @@ a:hover {
   padding: 0.5rem 0;
   z-index: 2; /* Asegura que el texto esté por encima de la superposición */
 }
-
+/* section sobre mi  */
 .about-me{
   background-color: var(--second-color);
   border-radius: 10px;
@@ -106,40 +110,9 @@ a:hover {
 
 
 
-.about-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 
-.about-description {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
-}
 
-.technologies {
-  margin-top: 20px;
-}
 
-.technologies h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px; /* Espacio entre los iconos */
-}
-
-.tech-icon {
-  width: 40px; /* Ajusta el tamaño del icono */
-  height: 40px; /* Asegura que todos los iconos tengan el mismo tamaño */
-}
-
-.about-img {
-  border-radius: 10px; /* Bordes redondeados para la imagen */
-  max-width: 100%; /* Asegura que la imagen no se desborde */
-}
 
 
 /* Contacto */
@@ -151,7 +124,7 @@ a:hover {
 }
 
 .contacto .rectangulo {
-  margin-top: -3.5rem;
+  margin-top: -2.5rem;
   background-color: rgb(13, 110, 253);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
@@ -165,7 +138,8 @@ a:hover {
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+font-family: 'Merriweather', serif;
+
 }
 .contacto .descripcion {
   color: white;
