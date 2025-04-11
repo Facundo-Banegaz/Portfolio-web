@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./img/favicon.png">
   </head>
@@ -19,7 +17,7 @@
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.html"data-aos="fade-right">
       <!-- <img src="./img/logo.png" alt="Facundo"> -->
     Portfolio personal
     </a>
@@ -27,7 +25,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-lg-auto">
+            <ul class="navbar-nav ms-lg-auto"data-aos="fade-left">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
               </li>
@@ -52,45 +50,93 @@
       <div class="container-fluid">
         <!-- seccion hero -->
         <section class="row text-white align-items-center min-vh-100 text-center p-2" id="hero">
-          <article class="col-12 col-lg-6 d-flex align-items-center justify-content-center overflow-hidden mt-4 mb-lg-0">
+          <article class="col-12 col-lg-6 d-flex align-items-center justify-content-center overflow-hidden mt-4 mb-lg-0"data-aos="fade-right" data-aos-duration="1000">
             <div class="rounded-circle bg-white  text-center bg-opacity-75 overflow-hidden">
               <img class="img-fluid" src="./img/foto-cv.png" style="max-width: 80%;" alt="Foto de presentación" />
             </div>
           </article>
-          <article class="col-12 col-lg-6 text-center mt-4 mb-lg-0">
+          <article class="col-12 col-lg-6 text-center mt-4 mb-lg-0"data-aos="fade-left" data-aos-duration="1000">
             <h2 class="fs-1 mb-1 hero-title">¡Hola! Soy Facundo Banegaz.</h2>
             <h3 class="fs-3 mb-1 hero-subtitle"><i>Programador Full Stack con C# .NET</i></h3>
-            <a class="btn btn-dark bg-dark btn-lg fw-bold" href="./img/Currículum.pdf" target="_blank">¡Ver Currículum!</a>
+            <a class="btn btn-dark bg-dark btn-lg fw-bold" href="./img/Facundo_Banegaz_Programador_FullStack.NET.pdf" target="_blank">¡Ver Currículum!</a>
           </article>
         </section>
 
         <!-- seccion Sobre Mi  -->
-    <section class="about-me container text-white py-5 mt-5" id="about-me">
+    <section class="about-me container text-white py-5 mt-5" id="about-me"data-aos="zoom-in">
       <div class="row align-items-center text-sm-start text-lg-center">
         <div class="col-12 col-sm-12 col-lg-8">
           <h2 class="fs-1">Sobre mí</h2>
           <p class="fs-5">
-            Soy un programador especializado en C# .NET con habilidades destacadas en autogestión, trabajo en equipo y colaboración. Domino tecnologías del Frontend (HTML, CSS, Bootstrap, JavaScript, Angular) y del Backend (C#, Web API, SQL Server), demostrando capacidad para manejar diversas herramientas de desarrollo. Aporto rápidamente a proyectos complejos con código limpio y optimizado.
+          Programador Full Stack  en C# .NET. He trabajado en el desarrollo de aplicaciones web y de escritorio, optimizando procesos y mejorando sistemas para hacerlos más eficientes. Me interesa seguir aprendiendo y creciendo en un entorno dinámico, donde pueda enfrentar desafíos técnicos y aportar al desarrollo de proyectos innovadores.
           </p>
           <div class="d-flex justify-content-sm-center gap-2 flex-column justify-content-lg-center">
-            <h3>Back-End</h3>
-            <div>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/>
-                <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/>
-                <img src="./img/asp-net-logo.png" alt="ASP.NET Core" width="40" height="40"/>
-                <img src="https://www.toucantoco.com/hs-fs/hubfs/rest-api-icon.webp?width=367&height=300&name=rest-api-icon.webp" alt="Web API" width="40" height="40"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swagger/swagger-original.svg" alt="Swagger" width="40" height="40"/>
-                <img src="https://jwt.io/img/logo-asset.svg" alt="JWT" width="40" height="40"/>
-            </div>
-            <h3>Front-End</h3>
-            <div >
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/>
-                <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/>
-            </div>
+            <h3>Backend</h3>
+<div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
+  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://dotnet.microsoft.com/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt=".NET Core" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="./img/net-logo.png" alt=".NET Core" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SQL Server" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://restfulapi.net/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://www.toucantoco.com/hs-fs/hubfs/rest-api-icon.webp?width=367&height=300&name=rest-api-icon.webp" alt="Web API" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://swagger.io/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swagger/swagger-original.svg" alt="Swagger" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://jwt.io/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://jwt.io/img/logo-asset.svg" alt="JWT" width="30" height="30">
+    </div>
+  </a>
+</div>
+            <h3>Frontend</h3>
+<div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="30" height="30">
+    </div>
+  </a>
+  <a href="https://getbootstrap.com/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png" alt="Bootstrap" width="40" height="40">
+    </div>
+  </a>
+  <a href="https://angular.io/" target="_blank" class="text-decoration-none">
+    <div class="bg-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+      <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" width="30" height="30">
+    </div>
+  </a>
+</div>
           </div>
         </div>
         <div class="col-12 col-lg-4 text-sm-center text-lg-start mt-3">
@@ -101,7 +147,7 @@
 
  <!-- seccion contacto -->
 
-    <section id="contacto" class="contacto">
+    <section id="contacto" class="contacto"data-aos="zoom-in">
         <div class="container text-center rectangulo d-flex justify-content-evenly">
           <div class="row">
             <div class="col-12 col-md-4 seccion-titulo text-white">
@@ -126,13 +172,13 @@
         <section class=" container row-cols-12 text-white align-items-lg-center mt-5" id="projects">
           
           <!-- Titulo  -->
-          <div class="text-center mb-5">
+          <div class="text-center mb-5"data-aos="zoom-in">
             <h2 class="fs-1">Mis proyectos recientes</h2>
             <h3 class="fs-4">Estos son algunos proyectos que he creado recientemente...</h3>
           </div>
           
           <!-- proyecto 1 -->
-          <div class="row align-items-lg-center">
+          <div class="row align-items-lg-center"data-aos="fade-left" data-aos-duration="1000">
           <article class="col-12 col-lg-6 text-lg-end">
             <h2>Catálogo de Productos</h2>
             <p>
@@ -154,7 +200,7 @@
 
           <!-- proyecto 2  -->
 
-          <div class="row align-items-lg-center">
+          <div class="row align-items-lg-center"data-aos="fade-right" data-aos-duration="1000">
           <article class="col-12 col-lg-6 text-lg-start order-lg-1">
             <h2>Sistema De Ventas</h2>
             <p>
@@ -175,7 +221,7 @@
 
             <!-- proyecto 3  -->
 
-          <div class="row align-items-lg-center">
+          <div class="row align-items-lg-center"data-aos="fade-left" data-aos-duration="1000">
 
 
           <article class="col-12 col-lg-6 text-lg-end">
@@ -201,7 +247,7 @@
           </div>
           <!-- proyecto 4  -->
 
-          <div class="row align-items-lg-center">
+          <div class="row align-items-lg-center"data-aos="fade-right" data-aos-duration="1000">
 
           <article class="col-12 col-lg-6 text-lg-start order-lg-1">
             <h2>Api Disney</h2>
@@ -231,11 +277,36 @@
             />
           </article>
           </div>
-        
+
+          <!-- proyecto 5  -->
+            <div class="row align-items-lg-center" data-aos="fade-left" data-aos-duration="1000">
+
+  <article class="col-12 col-lg-6 text-lg-end">
+    <h2>E-commerce de Suplementos</h2>
+    <p>
+      Es un ecommerce desarrollado con ASP.NET Core, donde los usuarios pueden comprar suplementos en línea con funcionalidades de búsqueda avanzada, filtros, paginación, carrito de compras, login, registro de usuarios y sección de administradores con dashboard. La autenticación y autorización se gestionan a través del correo electrónico. Utilicé Entity Framework para la gestión de la base de datos. Aún está en fases finales de desarrollo, pero ya cuenta con la mayoría de las funcionalidades implementadas.
+    </p>
+    <a href="https://github.com/Facundo-Banegaz/Ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn-primary me-3">
+      <i class="bi bi-github"></i> Ir al repositorio
+    </a>
+    <!-- <a href="http://www.ecommerce-suplements.somee.com/" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+      <i class="bi bi-eye"></i> ver live
+    </a> -->
+  </article>
+  
+  <article class="col-12 col-lg-6 mb-5 pt-3">
+    <img
+      src="./img/proyecto5.png"
+      alt="E-commerce de Suplementos"
+      class="img-fluid"
+    />
+  </article>
+  
+</div>
 
           <!-- boton de ir a ver mas proyectos -->
-          <div class="text-center m-5">
-              <a href="https://github.com/Facundo-Banegaz?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <div class="text-center m-5"data-aos="zoom-in">
+              <a href="https://github.com/Facundo-Banegaz" target="_blank" rel="noopener noreferrer">
                 <button type="button" class="btn btn-dark">
                   Ver más proyectos
                   <i class="bi bi-arrow-right-circle-fill"></i>
@@ -252,7 +323,7 @@
 <!-- <-- Pie de pagina (footer) --> 
     <footer class="bg-dark d-flex flex-column align-items-center justify-content-center"> 
       <img class="footer-logo" src="./img/icono-blanco.svg" alt="Logo del portafolio">
-      <p class="footer-texto text-center text-white">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <p class="footer-texto text-center text-white">Aprendiendo y creciendo cada día con .NET, transformando desafíos en soluciones innovadoras.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
 
         <a href="https://github.com/Facundo-Banegaz" target="_blank" rel="noopener noreferrer">
@@ -262,11 +333,14 @@
           <i class="bi bi-linkedin"></i>
         </a>
       </div>
-      <div class="derechos-de-autor">Creado por Facundo Banegaz  (2024) &#169;</div>
+      <div class="derechos-de-autor">Creado por Facundo Banegaz  (2025) &#169;</div>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
-
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script> -->
   </body>
 </html>

@@ -16,10 +16,12 @@
   --bg-body:linear-gradient(135deg, rgba(20, 133, 225, 0.91), rgba(7, 31, 51, 0.97) 79%);
   --bg-fondo: rgba(79, 79, 80, 0.799);
 }
-
+html {
+  scroll-padding-top: 200px; /* Ajusta el valor según la altura de tu encabezado */
+}
 /* ********* Reset Styles ********** */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lora', sans-serif;
     background: var(--bg-body);
 
 }
@@ -124,7 +126,7 @@ a:hover {
 
 .contacto .rectangulo {
   margin-top: -2.5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #23539c; 
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
